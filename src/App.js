@@ -36,7 +36,6 @@ function App() {
         let dateString;
         while (true) {
             dateString = dateObjToStringFormat(dateObj);
-            console.log("im go to test " + dateString);
             if ((dateString in daysQqq))
                 return dateString;
             dateObj.setDate(dateObj.getDate() - 1);
