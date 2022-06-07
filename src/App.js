@@ -79,7 +79,7 @@ function App() {
 
     // Si cambia el horizonte temporal, entonces actualiza la fecha de inicio
     useEffect(() => {
-        if (daysQqq && horizont < 20 && horizont > 0) {
+        if (daysQqq && horizont <= 22 && horizont > 0) {
             let parts = dateObjToStringFormat(today).split("-");
             let test = new Date(parts[0] - horizont, parts[1] - 1, parts[2])
             setStartDate(getValidDate(test))
